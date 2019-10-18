@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    Both .forEach and .map loop through a list of data and pass back an item and index for use to use as we see fit. The biggest difference between the two is that .map returns a new array of elements while .forEach does not. forEach simply calls a provided function on each element in an array.
+
 2. What is the difference between a function and a method?
+
+    A function is a piece of code we can call by name. A method, on the other hand, is specifically a function that belongs to an object, which is super useful in Prototypal Inheritance.
 
 3. What is closure?
 
+    A closure is an inner function that has access to its outer function scope chain, even when the outer function is returned. Ultimatley it has access to three levels of scope: its own, outer function variables, and global variables.
+
 4. Describe the four rules of the 'this' keyword.
 
+    Window Binding - "this" is the global context whenever a function gets invoked without any other rules in place being met. Simply put, "this" would reference the default binding, which is typically the window object when in a browser. 
+
+    Implict Binding - The most common rule used in roughly 80% of cases, implicit binding uses dot notation to determine what "this" references. When the function is being invoked, simply look left of the dot to find the object it's attached to.
+
+    Explicit Binding - With explicit binding, we pass the exact object we wish to refer to as "this" in the first argument of our invoked functions. Unlike implicit binding, we are explicitly specifying what the 'this' keyword is referencing. We use the .call, .apply, and many more methods to help us achieve this.
+
+    New Binding - What new binding does is create brand new objects anytime a function is invoked with the 'new' keyword. In other words, the 'this' keyword references the new object being created.
+
 5. Why do we need super() in an extended class?
+
+    super() is crucial in extended classes because it's what allows children to access and call functions from the parent constructor. Basically, it's what calls the constructor of the extended class.
 
 ## Project Set up
 
